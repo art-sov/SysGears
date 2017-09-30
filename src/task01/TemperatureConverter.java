@@ -36,7 +36,7 @@ public class TemperatureConverter {
     }
 
     public void parsingTemp(String str){
-        char lastChar = str.charAt(str.length() - 1);
+        char lastChar = Character.toUpperCase(str.charAt(str.length() - 1));
         String tempString = str.substring(0, str.length() - 1);
         int tempInt = 0;
         try {

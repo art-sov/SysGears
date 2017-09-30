@@ -15,10 +15,12 @@ public class Task01 {
 
         try {
             str = reader.readLine();
+            reader.close();
         }
         catch (IOException e){
             e.printStackTrace();
         }
+
 
         TemperatureConverter temperatureConverter = new TemperatureConverter();
         temperatureConverter.parsingTemp(str);
